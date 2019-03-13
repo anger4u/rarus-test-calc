@@ -56,15 +56,18 @@
 
         <div class="input-list">
             <div class="calc__row total-sum">
-                <input type="number" min="850000" max="25000000" placeholder="Общая сумма кредита" name="total_sum" value="" required>
+                <input type="number" min="850000" max="25000000" placeholder="Стоимость объекта кредитования" name="total_sum" value="" required>
+                <span>руб.</span>
             </div>
 
             <div class="calc__row init-sum">
                 <input type="number" min="85000" max="22500000" placeholder="Первоначальный взнос" name="init_sum" value="" required>
+                <span>руб.</span>
             </div>
 
             <div class="calc__row term-credit">
                 <input type="number" min="36" max="300" placeholder="Срок кредитования" name="term_credit" value="" required>
+                <span>мес.</span>
             </div>
         </div>
 
