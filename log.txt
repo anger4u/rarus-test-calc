@@ -1,0 +1,1221 @@
+2019-03-13 10:54:29 Array
+(
+    [type] => 2
+    [tariff] => 2
+    [total] => 1111111
+    [init] => 333333
+    [term] => 55
+)
+
+2019-03-13 10:55:04 Array
+(
+    [type] => 2
+    [tariff] => 2
+    [total] => 1111111
+    [init] => 333333
+    [term] => 55
+)
+
+2019-03-13 10:55:15 Array
+(
+    [type] => 2
+    [tariff] => 2
+    [total] => 1111111
+    [init] => 333333
+    [term] => 55
+)
+
+2019-03-13 10:55:16 Array
+(
+    [type] => 2
+    [tariff] => 2
+    [total] => 1111111
+    [init] => 333333
+    [term] => 55
+)
+
+2019-03-13 10:55:16 Array
+(
+    [type] => 2
+    [tariff] => 2
+    [total] => 1111111
+    [init] => 333333
+    [term] => 55
+)
+
+2019-03-13 10:56:38 Array
+(
+    [type] => 2
+    [tariff] => 2
+    [total] => 1111111
+    [init] => 333333
+    [term] => 55
+)
+
+2019-03-13 10:57:11 Array
+(
+    [type] => 2
+    [tariff] => 2
+    [total] => 1111111
+    [init] => 333333
+    [term] => 55
+)
+
+2019-03-13 10:58:41 Array
+(
+    [type] => 2
+    [tariff] => 2
+    [total] => 1111111
+    [init] => 333333
+    [term] => 55
+)
+
+2019-03-13 10:58:41 Array
+(
+    [type] => 2
+    [tariff] => 2
+    [total] => 1111111
+    [init] => 333333
+    [term] => 55
+)
+
+2019-03-13 10:58:42 Array
+(
+    [type] => 2
+    [tariff] => 2
+    [total] => 1111111
+    [init] => 333333
+    [term] => 55
+)
+
+2019-03-13 10:58:50 Array
+(
+    [type] => 1
+    [tariff] => 2
+    [total] => 1111111
+    [init] => 333333
+    [term] => 55
+)
+
+2019-03-13 10:58:59 Array
+(
+    [type] => 1
+    [tariff] => 2
+    [total] => 1111111
+    [init] => 333333
+    [term] => 55
+)
+
+2019-03-13 10:59:02 Array
+(
+    [type] => 1
+    [tariff] => 2
+    [total] => 1111111
+    [init] => 555555
+    [term] => 55
+)
+
+2019-03-13 10:59:24 Array
+(
+    [type] => 1
+    [tariff] => 2
+    [total] => 1111111
+    [init] => 555555
+    [term] => 55
+)
+
+2019-03-13 10:59:25 Array
+(
+    [type] => 1
+    [tariff] => 2
+    [total] => 1111111
+    [init] => 555555
+    [term] => 55
+)
+
+2019-03-13 10:59:25 Array
+(
+    [type] => 1
+    [tariff] => 2
+    [total] => 1111111
+    [init] => 555555
+    [term] => 55
+)
+
+2019-03-13 10:59:26 Array
+(
+    [type] => 1
+    [tariff] => 2
+    [total] => 1111111
+    [init] => 555555
+    [term] => 55
+)
+
+2019-03-13 10:59:36 Array
+(
+    [type] => 3
+    [total] => 1111111
+    [init] => 555555
+    [term] => 55
+)
+
+2019-03-13 10:59:59 Array
+(
+    [type] => 3
+    [total] => 1111111
+    [init] => 555555
+    [term] => 55
+)
+
+2019-03-13 11:13:00 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 11:13:00 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 11:13:00 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 11:13:00 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 11:13:00 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 11:16:44 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 11:16:55 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 11:17:03 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 11:17:04 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 11:39:07 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 40
+)
+
+2019-03-13 11:39:39 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 40
+)
+
+2019-03-13 11:39:46 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 40
+)
+
+2019-03-13 11:40:21 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 40
+)
+
+2019-03-13 11:41:19 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 40
+)
+
+2019-03-13 11:41:20 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 40
+)
+
+2019-03-13 11:42:47 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 40
+)
+
+2019-03-13 11:43:12 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 41
+)
+
+2019-03-13 11:45:25 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 41
+)
+
+2019-03-13 11:45:55 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 41
+)
+
+2019-03-13 11:46:00 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 11:50:00 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 11:52:39 Array
+(
+    [type] => 1
+    [total] => 1000000
+    [init] => 600000
+    [term] => 50
+    [age] => 
+)
+
+2019-03-13 11:52:53 Array
+(
+    [type] => 1
+    [tariff] => 2
+    [total] => 1000000
+    [init] => 600000
+    [term] => 50
+    [age] => 
+)
+
+2019-03-13 11:52:55 Array
+(
+    [type] => 1
+    [total] => 1000000
+    [init] => 600000
+    [term] => 50
+    [age] => 
+)
+
+2019-03-13 11:53:01 Array
+(
+    [type] => 1
+    [total] => 1000000
+    [init] => 600000
+    [term] => 50
+    [age] => 
+)
+
+2019-03-13 11:53:23 Array
+(
+    [type] => 1
+    [tariff] => 3
+    [total] => 1000000
+    [init] => 600000
+    [term] => 50
+    [age] => 
+)
+
+2019-03-13 11:53:42 Array
+(
+    [type] => 1
+    [tariff] => 3
+    [total] => 1000000
+    [init] => 600000
+    [term] => 50
+    [age] => 
+)
+
+2019-03-13 11:53:43 Array
+(
+    [type] => 1
+    [tariff] => 3
+    [total] => 1000000
+    [init] => 600000
+    [term] => 50
+    [age] => 
+)
+
+2019-03-13 11:53:43 Array
+(
+    [type] => 1
+    [tariff] => 3
+    [total] => 1000000
+    [init] => 600000
+    [term] => 50
+    [age] => 
+)
+
+2019-03-13 11:53:43 Array
+(
+    [type] => 1
+    [tariff] => 3
+    [total] => 1000000
+    [init] => 600000
+    [term] => 50
+    [age] => 
+)
+
+2019-03-13 11:53:46 Array
+(
+    [type] => 1
+    [tariff] => 2
+    [total] => 1000000
+    [init] => 600000
+    [term] => 50
+    [age] => 
+)
+
+2019-03-13 11:53:52 Array
+(
+    [type] => 1
+    [tariff] => 1
+    [total] => 1000000
+    [init] => 600000
+    [term] => 50
+    [age] => 
+)
+
+2019-03-13 11:53:55 Array
+(
+    [type] => 1
+    [tariff] => 2
+    [total] => 1000000
+    [init] => 600000
+    [term] => 50
+    [age] => 
+)
+
+2019-03-13 11:53:56 Array
+(
+    [type] => 1
+    [tariff] => 3
+    [total] => 1000000
+    [init] => 600000
+    [term] => 50
+    [age] => 
+)
+
+2019-03-13 11:54:01 Array
+(
+    [type] => 1
+    [tariff] => 2
+    [total] => 1000000
+    [init] => 600000
+    [term] => 50
+    [age] => 
+)
+
+2019-03-13 11:54:03 Array
+(
+    [type] => 1
+    [tariff] => 1
+    [total] => 1000000
+    [init] => 600000
+    [term] => 50
+    [age] => 
+)
+
+2019-03-13 11:54:10 Array
+(
+    [type] => 2
+    [tariff] => 4
+    [total] => 1000000
+    [init] => 600000
+    [term] => 50
+    [age] => 
+)
+
+2019-03-13 11:54:29 Array
+(
+    [type] => 2
+    [tariff] => 4
+    [total] => 1000000
+    [init] => 600000
+    [term] => 50
+    [age] => 
+)
+
+2019-03-13 11:54:30 Array
+(
+    [type] => 2
+    [tariff] => 4
+    [total] => 1000000
+    [init] => 600000
+    [term] => 50
+    [age] => 
+)
+
+2019-03-13 11:55:34 Array
+(
+    [type] => 2
+    [tariff] => 4
+    [total] => 1000000
+    [init] => 600000
+    [term] => 50
+    [age] => 
+)
+
+2019-03-13 11:55:35 Array
+(
+    [type] => 2
+    [tariff] => 4
+    [total] => 1000000
+    [init] => 600000
+    [term] => 50
+    [age] => 
+)
+
+2019-03-13 11:55:38 Array
+(
+    [type] => 2
+    [tariff] => 1
+    [total] => 1000000
+    [init] => 600000
+    [term] => 50
+    [age] => 
+)
+
+2019-03-13 11:55:46 Array
+(
+    [type] => 2
+    [tariff] => 1
+    [total] => 1000000
+    [init] => 600000
+    [term] => 50
+    [age] => 
+)
+
+2019-03-13 11:55:48 Array
+(
+    [type] => 2
+    [tariff] => 2
+    [total] => 1000000
+    [init] => 600000
+    [term] => 50
+    [age] => 
+)
+
+2019-03-13 11:55:53 Array
+(
+    [type] => 1
+    [tariff] => 1
+    [total] => 1000000
+    [init] => 600000
+    [term] => 50
+    [age] => 
+)
+
+2019-03-13 11:55:59 Array
+(
+    [type] => 1
+    [tariff] => 2
+    [total] => 1000000
+    [init] => 600000
+    [term] => 50
+    [age] => 
+)
+
+2019-03-13 11:56:03 Array
+(
+    [type] => 1
+    [tariff] => 3
+    [total] => 1000000
+    [init] => 600000
+    [term] => 50
+    [age] => 
+)
+
+2019-03-13 11:56:13 Array
+(
+    [type] => 3
+    [total] => 1000000
+    [init] => 600000
+    [term] => 50
+    [age] => 31
+)
+
+2019-03-13 11:56:20 Array
+(
+    [type] => 3
+    [total] => 1000000
+    [init] => 600000
+    [term] => 50
+    [age] => 31
+)
+
+2019-03-13 11:56:21 Array
+(
+    [type] => 3
+    [total] => 1000000
+    [init] => 600000
+    [term] => 50
+    [age] => 31
+)
+
+2019-03-13 11:56:22 Array
+(
+    [type] => 3
+    [total] => 1000000
+    [init] => 600000
+    [term] => 50
+    [age] => 31
+)
+
+2019-03-13 11:56:22 Array
+(
+    [type] => 3
+    [total] => 1000000
+    [init] => 600000
+    [term] => 50
+    [age] => 31
+)
+
+2019-03-13 11:56:22 Array
+(
+    [type] => 3
+    [total] => 1000000
+    [init] => 600000
+    [term] => 50
+    [age] => 31
+)
+
+2019-03-13 11:56:32 Array
+(
+    [type] => 3
+    [total] => 1000000
+    [init] => 600000
+    [term] => 50
+    [age] => 31
+)
+
+2019-03-13 12:00:36 Array
+(
+    [type] => 3
+    [total] => 1000000
+    [init] => 600000
+    [term] => 50
+    [age] => 31
+)
+
+2019-03-13 12:00:37 Array
+(
+    [type] => 3
+    [total] => 1000000
+    [init] => 600000
+    [term] => 50
+    [age] => 31
+)
+
+2019-03-13 12:10:21 Array
+(
+    [type] => 1
+    [tariff] => 2
+    [total] => 1000000
+    [init] => 500000
+    [term] => 55
+    [age] => 
+)
+
+2019-03-13 12:10:26 Array
+(
+    [type] => 3
+    [total] => 1000000
+    [init] => 500000
+    [term] => 55
+    [age] => 33
+)
+
+2019-03-13 12:11:23 Array
+(
+    [type] => 3
+    [total] => 1000000
+    [init] => 500000
+    [term] => 55
+    [age] => 33
+)
+
+2019-03-13 12:11:23 Array
+(
+    [type] => 3
+    [total] => 1000000
+    [init] => 500000
+    [term] => 55
+    [age] => 33
+)
+
+2019-03-13 12:11:45 Array
+(
+    [type] => 1
+    [tariff] => 2
+    [total] => 1000000
+    [init] => 500000
+    [term] => 55
+    [age] => 
+)
+
+2019-03-13 12:11:48 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 12:12:02 Array
+(
+    [type] => 2
+    [tariff] => 1
+    [total] => 2000000
+    [init] => 500000
+    [term] => 44
+    [age] => 33
+)
+
+2019-03-13 12:12:06 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 12:14:47 Array
+(
+    [type] => 1
+    [tariff] => 1
+    [total] => 1000000
+    [init] => 500000
+    [term] => 55
+    [age] => 
+)
+
+2019-03-13 12:14:52 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 12:24:40 Array
+(
+    [type] => 2
+    [tariff] => 1
+    [total] => 1000000
+    [init] => 500000
+    [term] => 55
+    [age] => 
+)
+
+2019-03-13 12:24:44 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 13:08:12 Array
+(
+    [type] => 1
+    [tariff] => 2
+    [total] => 1000000
+    [init] => 500000
+    [term] => 55
+    [age] => 
+)
+
+2019-03-13 13:08:21 Array
+(
+    [type] => 1
+    [total] => 1000000
+    [init] => 500000
+    [term] => 55
+    [age] => 
+)
+
+2019-03-13 13:08:34 Array
+(
+    [type] => 2
+    [tariff] => 2
+    [total] => 2000000
+    [init] => 600000
+    [term] => 36
+    [age] => 
+)
+
+2019-03-13 13:08:50 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 36
+)
+
+2019-03-13 13:28:12 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 36
+)
+
+2019-03-13 13:43:39 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 13:46:52 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 13:47:09 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 13:47:09 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 13:47:10 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 13:47:10 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 13:47:11 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 13:47:11 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 13:47:11 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 13:47:11 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 13:47:11 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 13:47:11 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 13:47:12 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 13:47:12 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 13:47:12 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 13:47:12 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 13:47:14 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 13:47:14 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 13:47:14 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 13:47:15 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 13:47:15 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 13:47:15 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 13:47:15 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 13:47:15 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 13:47:15 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 13:47:24 Array
+(
+    [type] => 2
+    [tariff] => 4
+    [total] => 1000000
+    [init] => 600000
+    [term] => 44
+    [age] => 33
+)
+
+2019-03-13 13:50:39 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 14:10:44 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 14:16:22 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 14:17:18 Array
+(
+    [type] => 2
+    [tariff] => 4
+    [total] => 1000000
+    [init] => 500000
+    [term] => 44
+    [age] => 33
+)
+
+2019-03-13 14:18:22 Array
+(
+    [type] => 2
+    [tariff] => 2
+    [total] => 1000000
+    [init] => 500000
+    [term] => 44
+    [age] => 
+)
+
+2019-03-13 14:20:32 Array
+(
+    [type] => 1
+    [tariff] => 2
+    [total] => 1000000
+    [init] => 500000
+    [term] => 44
+    [age] => 
+)
+
+2019-03-13 14:45:51 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 14:46:04 Array
+(
+    [type] => 1
+    [tariff] => 3
+    [total] => 1000000
+    [init] => 500000
+    [term] => 44
+    [age] => 
+)
+
+2019-03-13 14:51:48 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 14:52:17 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 14:52:21 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 14:53:47 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 14:54:50 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
+2019-03-13 14:55:19 Array
+(
+    [type] => 3
+    [total] => 
+    [init] => 
+    [term] => 
+    [age] => 33
+)
+
