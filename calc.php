@@ -148,8 +148,8 @@ if ((!is_null($_REQUEST["type"]) && is_numeric($_REQUEST["type"])) &&
             '<tr>
                 <td>' . $i . '</td>
                 <td>' . $restPay . '</td>
-                <td>' . (($percentage[0] / 100) * $payMonth) . '</td>
-                <td>' . ($payMonth - ($percentage[0] / 100 * $payMonth)) . '</td>
+                <td>' . round(($percentage[0] / 100) * $payMonth, 2) . '</td>
+                <td>' . round($payMonth - ($percentage[0] / 100 * $payMonth), 2) . '</td>
                 <td>' . $payMonth . '</td>
             </tr>';
 
