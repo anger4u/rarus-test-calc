@@ -145,7 +145,6 @@ if ((!is_null($_REQUEST["type"]) && is_numeric($_REQUEST["type"])) &&
 
     for ($i = 1; $i <= $term; $i++) {
         $restPay -= $payMonth;
-
         $planTable .=
             '<tr>
                 <td>' . $i . '</td>
@@ -154,6 +153,7 @@ if ((!is_null($_REQUEST["type"]) && is_numeric($_REQUEST["type"])) &&
                 <td>' . round($payMonth - ($percentage[0] / 100 * $payMonth), 2) . '</td>
                 <td>' . $payMonth . '</td>
             </tr>';
+
     }
 
     $planTable .= '</tbody>
