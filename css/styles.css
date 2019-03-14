@@ -95,12 +95,12 @@ label span {
     display: none;
 }
 
-.res-table {
+.res-table, .plan-table {
     margin-top: 30px;
     width: 85%;
 }
 
-.res-table table {
+.res-table table, .plan-table table {
     font-size: 16px;
     border-collapse: collapse;
     border: 1px solid black;

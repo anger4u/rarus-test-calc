@@ -25,11 +25,6 @@
                 <input type="radio" class="ready-flat" id="2" name="type" value="Готовая квартира">
                 <span>Готовая квартира</span>
             </label>
-
-            <label>
-                <input type="radio" class="war-flat" id="3" name="type" value="Военный (участник НИС)">
-                <span>Военный (участник НИС)</span>
-            </label>
         </div>
 
         <div class="calc__row tariff-list">
@@ -71,16 +66,14 @@
             </div>
         </div>
 
-        <div class="calc__row military hidden">
-            <input type="number" min="20" max="41" placeholder="Ваш возраст" name="military_age" value="" disabled>
-        </div>
-
         <div class="calc__row">
             <button type="submit">Рассчитать кредит</button>
         </div>
     </form>
 
     <div class="res-table"></div>
+
+    <div class="plan-table"></div>
 
 </div>
 

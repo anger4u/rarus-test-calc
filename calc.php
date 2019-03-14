@@ -80,19 +80,24 @@ if ((!is_null($_REQUEST["type"]) && is_numeric($_REQUEST["type"])) &&
     /**
      * Рассчёт коэффициента ипотеки по формуле из ТЗ
      */
-    $creditK = ( $percMonth * (pow((1 + $percMonth), $term)) ) / ( (pow((1 + $percMonth), $term)) -1 );
+    $creditK = ($percMonth * (pow((1 + $percMonth), $term))) / ((pow((1 + $percMonth), $term)) - 1);
 
     /**
      * Рассчёт размера ежемесячного платежа
      */
-    $result = round($creditK * $creditTotal, 2);
+    $payMonth = round($creditK * $creditTotal, 2);
+
+    /**
+     * Рассчёт суммы кредита с процентами
+     */
+    $restPay = $term * $payMonth;
 
     /**
      * Вёрстка результирующей таблицы с занесением переменных с расчётами
      */
-    $html = '
+    $resultTable = '
         <h2>Результат</h2>
-        <table id="result">
+        <table id="resultTable">
             <thead>
                 <tr>
                     <th>Тип ипотеки</th>
@@ -115,91 +120,52 @@ if ((!is_null($_REQUEST["type"]) && is_numeric($_REQUEST["type"])) &&
                     <td>' . $term . '</td>
                     <td>' . $creditTotal . '</td>
                     <td>' . $percentage[0] . '</td>
-                    <td>' . $result . '</td>
+                    <td>' . $payMonth . '</td>
                 </tr>
             </tbody>
         </table>';
 
     /**
-     * Занесение результирующей таблицы в ответный массив с указанием статуса ок
+     * Вёрстка таблицы плана выплат с занесением переменных с расчётами
      */
-    $arResult['status'] = 'ok';
-    $arResult['html'] = $html;
-
-/**
- * Проверка типов данных для военных
- *
- * Если предыдущее условие не выполнилось, значит ипотека военная.
- * Проверка типов входных данных для военной ипотеки. При выполнении условия производится рассчёт
- * максимальной суммы ипотеки и срок её выплаты.
- *
- */
-} elseif ((!is_null($_REQUEST["type"]) && is_numeric($_REQUEST["type"])) &&
-           !is_null($_REQUEST["age"]) && is_numeric($_REQUEST["age"])) {
-
-    /**
-     * Логирование входных данных
-     */
-    $log = date('Y-m-d H:i:s') . ' ' . print_r($_REQUEST, true);
-    file_put_contents(__DIR__ . '/log.txt', $log . PHP_EOL, FILE_APPEND);
-
-    /**
-     * SQL запрос в базу названия типа ипотеки
-     */
-    $tNameQuery = "SELECT type FROM types WHERE id_type = " . $_REQUEST["type"];
-    $tNameRes = mysqli_query($dbh, $tNameQuery);
-    $typeName = mysqli_fetch_row($tNameRes);
-
-    /**
-     * Присвоений значения возраста из запроса и проведение рассчётов
-     */
-    $age = $_REQUEST["age"];
-
-    if ($age < 25) {
-        $term = 20;
-        $sum = 2510192;
-    } else {
-        $term = 44 - $age;
-        $ageCoef = $age - 24 + 3;
-        $sum = round(2510192 - (2510192 * ($ageCoef * 3.5 / 100)), 2);
-    }
-
-    /**
-     * Вёрстка результирующей таблицы с занесением переменных с расчётами
-     */
-    $html = '
-        <h2>Результат</h2>
-        <table id="result">
+    $planTable =
+        '<h2>План выплат ипотеки</h2>
+        <table id="planTable">
             <thead>
                 <tr>
-                    <th>Тип ипотеки</th>
-                    <th>Возраст</th>
-                    <th>Срок кредитования (лет)</th>
-                    <th>Сумма кредита</th>
+                    <th>Месяц</th>
+                    <th>Остаток по кредиту c % (руб.)</th>
+                    <th>Проценты (руб.)</th>
+                    <th>Погашение долга (руб.)</th>
+                    <th>Ежемесячный платеж (руб.)</th>
                 </tr>
             </thead>
             
-            <tbody>
-                <tr>
-                    <td>' . $typeName[0] . '</td>
-                    <td>' . $_REQUEST["age"] . '</td>
-                    <td>' . $term . '</td>
-                    <td>' . $sum . '</td>
-                </tr>
-            </tbody>
-            
-        </table>';
+            <tbody>';
+
+    for ($i = 1; $i <= $term; $i++) {
+        $restPay -= $payMonth;
+
+        $planTable .=
+            '<tr>
+                <td>' . $i . '</td>
+                <td>' . $restPay . '</td>
+                <td>' . round($percentage[0] / 100 * $payMonth, 2) . '</td>
+                <td>' . round($payMonth - ($percentage[0] / 100 * $payMonth), 2) . '</td>
+                <td>' . $payMonth . '</td>
+            </tr>';
+    }
+
+    $planTable .= '</tbody>
+    </table>';
 
     /**
-     * Занесение результирующей таблицы в ответный массив с указанием статуса ок
+     * Занесение таблиц в ответный массив с указанием статуса ок
      */
     $arResult['status'] = 'ok';
-    $arResult['html'] = $html;
+    $arResult['resultTable'] = $resultTable;
+    $arResult['planTable'] = $planTable;
 
-/**
- * Занесение статуса ошибки и текст сообщения об ошибке в результирующий массив,
- * eсли ни одно из условий не выполнилось.
- */
 } else {
     $arResult['status'] = "error";
     $arResult['msg'] = "Данные не прошли проверку";

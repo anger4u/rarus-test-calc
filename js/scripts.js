@@ -5,48 +5,30 @@ $(document).ready(function () {
     // События для радиокнопки со значением Новостройка
     $('.new-flat').on('change', function() {
 
-        // Обнуление выбранных чекбоксов по клику и значения инпута для военной ипотеки
+        // Обнуление выбранных чекбоксов по клику
         $('.tariff-list input').prop("checked", false);
-        $("input[name='military_age']").val(null);
 
         // Расписание поведений и значений инпутов для фильтрации данных, которые уйдут в запросе
         if($(this).is(':checked')) {
-            $('.min-doc,.military').addClass('hidden');
+            $('.min-doc').addClass('hidden');
             $('.fam-gov,.tariff-list,.input-list').removeClass('hidden');
             $(".tariff-list input, .input-list input").prop('disabled', false);
-            $("input[name='min_doc'],input[name='military_age']").prop('disabled', true);
+            $("input[name='min_doc']").prop('disabled', true);
         }
     });
 
     // События для радиокнопки со значением Готовая квартира
     $('.ready-flat').on('change', function() {
 
-        // Обнуление выбранных чекбоксов по клику и значения инпута для военной ипотеки
+        // Обнуление выбранных чекбоксов по клику
         $('.tariff-list input').prop("checked", false);
-        $('.input-list input').val(null);
 
         // Расписание поведений и значений инпутов для фильтрации данных, которые уйдут в запросе
         if($(this).is(':checked')) {
             $('.min-doc,.tariff-list,.input-list').removeClass('hidden');
-            $('.fam-gov,.military').addClass('hidden');
+            $('.fam-gov').addClass('hidden');
             $(".tariff-list input, .input-list input").prop('disabled', false);
-            $("input[name='fam_gov'],input[name='military_age']").prop('disabled', true);
-        }
-    });
-
-    // События для радиокнопки со значением Военный (участник НИС)
-    $('.war-flat').on('change', function() {
-
-        // Обнуление выбранных чекбоксов по клику и значений инпутов для гражданских
-        $('.tariff-list input').prop("checked", false);
-        $('.input-list input').val(null);
-
-        // Расписание поведений и значений инпутов для фильтрации данных, которые уйдут в запросе
-        if($(this).is(':checked')) {
-            $('.military').removeClass('hidden');
-            $('.tariff-list,.input-list').addClass('hidden');
-            $("input[name='military_age']").prop('disabled', false);
-            $(".tariff-list input, .input-list input").prop('disabled', true);
+            $("input[name='fam_gov']").prop('disabled', true);
         }
     });
 
@@ -83,31 +65,29 @@ $(document).ready(function () {
         var total = $("input[name='total_sum']").val();
         var init = $("input[name='init_sum']").val();
         var term = $("input[name='term_credit']").val();
-        var age = $("input[name='military_age']").val();
 
          // запрос в обработчик
-         $.getJSON('calc.php', {type: radio, tariff: check, total: total, init: init, term: term, age: age}, function(data){
+         $.getJSON('calc.php', {type: radio, tariff: check, total: total, init: init, term: term}, function(data){
 
              // получение ответа с условием и вывод результата
              if (data.status === 'ok') {
                  console.log(data);
-                 $('.res-table').html(data.html);
+                 $('.res-table').html(data.resultTable);
+                 $('.plan-table').html(data.planTable);
              } else {
                  $('.res-table').html(data.msg);
              }
 
              // Вызов плагита DataTable
-             $('#result').DataTable( {
+             $('#resultTable, #planTable').DataTable( {
                  dom: 'Bfrtip',
                  paging: false,
                  ordering:  false,
                  info: false,
                  searching: false,
                  buttons: [
-                     'copyHtml5',
                      'excelHtml5',
                      'pdfHtml5',
-                     'print'
                  ]
              });
          });
