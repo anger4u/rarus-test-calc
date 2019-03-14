@@ -140,20 +140,20 @@ if ((!is_null($_REQUEST["type"]) && is_numeric($_REQUEST["type"])) &&
                     <th>Ежемесячный платеж (руб.)</th>
                 </tr>
             </thead>
-            
+
             <tbody>';
 
     for ($i = 1; $i <= $term; $i++) {
-        $restPay -= $payMonth;
         $planTable .=
             '<tr>
                 <td>' . $i . '</td>
                 <td>' . $restPay . '</td>
-                <td>' . round($percentage[0] / 100 * $payMonth, 2) . '</td>
-                <td>' . round($payMonth - ($percentage[0] / 100 * $payMonth), 2) . '</td>
+                <td>' . (($percentage[0] / 100) * $payMonth) . '</td>
+                <td>' . ($payMonth - ($percentage[0] / 100 * $payMonth)) . '</td>
                 <td>' . $payMonth . '</td>
             </tr>';
 
+        $restPay = round($restPay - $payMonth, 2);
     }
 
     $planTable .= '</tbody>

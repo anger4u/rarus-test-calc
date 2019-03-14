@@ -50,9 +50,6 @@ $(document).ready(function () {
 
         $("input[name='init_sum']").attr('min', Math.floor($("input[name='total_sum']").val() * min));
         $("input[name='init_sum']").attr('max', Math.floor($("input[name='total_sum']").val() * max));
-
-        console.log($("input[name='init_sum']").attr('min'));
-        console.log($("input[name='init_sum']").attr('max'));
     });
 
     // Подключение ajax запроса для отправки данных в обработчик

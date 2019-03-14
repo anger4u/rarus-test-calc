@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f4154988-ff0f-4fe3-9e17-fe0268c7373d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/calc.php" beforeDir="false" afterPath="$PROJECT_DIR$/calc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,11 +16,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/calc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="146" column="29" selection-start-line="146" selection-start-column="29" selection-end-line="146" selection-end-column="29" />
+            <state relative-caret-position="331">
+              <caret line="145" column="37" selection-start-line="145" selection-start-column="37" selection-end-line="145" selection-end-column="37" />
               <folding>
-                <marker date="1552571131351" expanded="true" signature="2876:3919" ph="..." />
-                <marker date="1552571131351" expanded="true" signature="4015:4929" ph="..." />
+                <marker date="1552572889029" expanded="true" signature="2876:3919" ph="..." />
+                <marker date="1552572889029" expanded="true" signature="4014:4923" ph="..." />
+                <marker date="1552572889029" expanded="true" signature="4015:4923" ph="..." />
               </folding>
             </state>
           </provider>
@@ -28,10 +30,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+            <state relative-caret-position="102">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
               <folding>
-                <marker date="1552566832360" expanded="true" signature="2367:2386" ph="..." />
+                <marker date="1552571957383" expanded="true" signature="2242:2261" ph="..." />
               </folding>
             </state>
           </provider>
@@ -73,9 +75,9 @@
         <option value="$PROJECT_DIR$/css/libs/buttons.dataTables.min.css" />
         <option value="$PROJECT_DIR$/css/libs/DataTable/jquery.dataTables.min.css" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/js/scripts.js" />
         <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/js/scripts.js" />
         <option value="$PROJECT_DIR$/calc.php" />
       </list>
     </option>
@@ -150,18 +152,18 @@
       <workItem from="1551948720868" duration="1350000" />
       <workItem from="1551954323049" duration="42717000" />
       <workItem from="1552370261322" duration="45147000" />
-      <workItem from="1552555985470" duration="7502000" />
+      <workItem from="1552555985470" duration="9259000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96723000" />
+    <option name="totallyTimeSpent" value="98480000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19440243" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19440243" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -373,21 +375,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+        <state relative-caret-position="102">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
           <folding>
-            <marker date="1552566832360" expanded="true" signature="2367:2386" ph="..." />
+            <marker date="1552571957383" expanded="true" signature="2242:2261" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/calc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="146" column="29" selection-start-line="146" selection-start-column="29" selection-end-line="146" selection-end-column="29" />
+        <state relative-caret-position="331">
+          <caret line="145" column="37" selection-start-line="145" selection-start-column="37" selection-end-line="145" selection-end-column="37" />
           <folding>
-            <marker date="1552571131351" expanded="true" signature="2876:3919" ph="..." />
-            <marker date="1552571131351" expanded="true" signature="4015:4929" ph="..." />
+            <marker date="1552572889029" expanded="true" signature="2876:3919" ph="..." />
+            <marker date="1552572889029" expanded="true" signature="4014:4923" ph="..." />
+            <marker date="1552572889029" expanded="true" signature="4015:4923" ph="..." />
           </folding>
         </state>
       </provider>
