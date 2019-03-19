@@ -32,6 +32,7 @@ input + span {
     border-radius: 30px;
     background-color: #fff;
     width: 500px;
+    box-shadow: 1px 2px 6px rgba(0,0,0,0.4);
 }
 
 .calc__row {
@@ -136,3 +137,20 @@ th, td {
     border: 1px solid lightgray;
     color: grey;
 }
+
+h2 {
+    font-size: 16px;
+    margin: 0;
+    margin-top: 10px;
+    color: #333;
+}
+
+
+.input-list input::-webkit-input-placeholder {
+    font-size: 14px;}
+.input-list input::-moz-placeholder          {
+    font-size: 14px;}/* Firefox 19+ */
+.input-list input:-moz-placeholder           {
+    font-size: 14px;}/* Firefox 18- */
+.input-list input:-ms-input-placeholder      {
+    font-size: 14px;}

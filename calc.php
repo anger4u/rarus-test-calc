@@ -24,28 +24,84 @@ if ((!is_null($_REQUEST["type"]) && is_numeric($_REQUEST["type"])) &&
     (!is_null($_REQUEST["term"]) && is_numeric($_REQUEST["term"]))) {
 
     /**
-     * Проверка типов данных для тарифа и присвоение значения переменной
-     */
-    if (!empty($_REQUEST["tariff"])) {
-        if (!is_null($_REQUEST["tariff"]) && is_numeric($_REQUEST["tariff"])) {
-            $tariff = $_REQUEST["tariff"];
-
-            // TARIFF NAME SQL QUERY
-            $tarQuery = "SELECT tariff FROM tariffs WHERE id_tariff = " . $tariff;
-            $tarRes = mysqli_query($dbh, $tarQuery);
-            $tarName = mysqli_fetch_row($tarRes);
-        }
-    } else {
-        $tariff = 0;
-    }
-
-    /**
      * Присвоение переменным значений из массива $_REQUEST
      */
     $type = $_REQUEST["type"];
     $total = $_REQUEST["total"];
     $init = $_REQUEST["init"];
     $term = $_REQUEST["term"];
+
+    /**
+     * Проверка типов данных для тарифа, присвоение значения переменной tariff, запросы в базу по tariff
+     */
+    if (!empty($_REQUEST["tariff"]) && is_array($_REQUEST["tariff"])) {
+        /**
+         * Если тариф 1
+         */
+        if (count($_REQUEST["tariff"]) < 2) {
+            /**
+             * Проверка типов данных для тарифа и присвоение значения переменной
+             */
+            if (!is_null($_REQUEST["tariff"][0]) && is_numeric($_REQUEST["tariff"][0])) {
+                $tariff = $_REQUEST["tariff"];
+
+                /**
+                 * SQL запрос в базу названия тарифа
+                 */
+                $tarQuery = "SELECT tariff FROM tariffs WHERE id_tariff = " . $tariff[0];
+                $tarRes = mysqli_query($dbh, $tarQuery);
+                $tarName = mysqli_fetch_row($tarRes);
+
+                /**
+                 * SQL запрос в базу % ставки по кредиту
+                 */
+                $percQuery = "SELECT percentage FROM tariff_types WHERE id_type = " . $type . " AND id_tariff = " . $tariff[0];
+                $percRes = mysqli_query($dbh, $percQuery);
+                $percentage = mysqli_fetch_row($percRes);
+            }
+        } else {
+            /**
+             * Если тарифов 2
+             *
+             * Проверка типов данных для тарифа и присвоение значения переменной
+             */
+            if (!is_null($_REQUEST["tariff"][0]) && is_numeric($_REQUEST["tariff"][1]) &&
+                !is_null($_REQUEST["tariff"][0]) && is_numeric($_REQUEST["tariff"][1])) {
+                $tariff = $_REQUEST["tariff"];
+
+                /**
+                 * SQL запрос в базу названия тарифа
+                 */
+                $tarQuery = "SELECT GROUP_CONCAT(tariff SEPARATOR ',') FROM tariffs WHERE id_tariff = " . $tariff[0] . " OR id_tariff = " . $tariff[1];
+                $tarRes = mysqli_query($dbh, $tarQuery);
+                $tarName = mysqli_fetch_row($tarRes);
+
+                /**
+                 * SQL запрос в базу % ставки по кредиту
+                 */
+                $percQuery =
+                    "SELECT percentage FROM tariff_types_double WHERE id_type = " . $type .
+                    " AND id_tariff_one IN(" . implode(',',$tariff) . ")" .
+                    " AND id_tariff_two IN(" . implode(',',$tariff) . ")";
+                $percRes = mysqli_query($dbh, $percQuery);
+                $percentage = mysqli_fetch_row($percRes);
+            }
+        }
+
+    } else {
+        /**
+         * Если тарифов нет
+         */
+        $tariff = 0;
+        $tarName = ['Отсутствует'];
+
+        /**
+         * SQL запрос в базу % ставки по кредиту
+         */
+        $percQuery = "SELECT percentage FROM tariff_types WHERE id_type = " . $type . " AND id_tariff = " . $tariff;
+        $percRes = mysqli_query($dbh, $percQuery);
+        $percentage = mysqli_fetch_row($percRes);
+    }
 
     /**
      * Логирование входных данных
@@ -59,13 +115,6 @@ if ((!is_null($_REQUEST["type"]) && is_numeric($_REQUEST["type"])) &&
     $tNameQuery = "SELECT type FROM types WHERE id_type = " . $type;
     $tNameRes = mysqli_query($dbh, $tNameQuery);
     $typeName = mysqli_fetch_row($tNameRes);
-
-    /**
-     * SQL запрос в базу % ставки по кредиту
-     */
-    $percQuery = "SELECT percentage FROM tariff_types WHERE id_type = " . $type . " AND id_tariff = " . $tariff;
-    $percRes = mysqli_query($dbh, $percQuery);
-    $percentage = mysqli_fetch_row($percRes);
 
     /**
      * Рассчёт ежемесячной % ставки
@@ -110,7 +159,7 @@ if ((!is_null($_REQUEST["type"]) && is_numeric($_REQUEST["type"])) &&
                     <th>Ежемесячный платёж</th>
                 </tr>
             </thead>
-            
+
             <tbody>
                 <tr>
                     <td>' . $typeName[0] . '</td>
