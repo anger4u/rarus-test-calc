@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Мар 13 2019 г., 12:16
+-- Время создания: Мар 19 2019 г., 09:31
 -- Версия сервера: 5.6.37
 -- Версия PHP: 7.1.7
 
@@ -62,15 +62,37 @@ CREATE TABLE `tariff_types` (
 --
 
 INSERT INTO `tariff_types` (`id_tt`, `id_type`, `id_tariff`, `percentage`) VALUES
-(1, 1, 1, 10.5),
-(2, 1, 2, 10),
-(5, 1, 3, 6),
-(6, 2, 1, 10.5),
-(7, 2, 2, 12.5),
-(8, 2, 4, 11),
-(9, 1, 0, 11.5),
-(10, 2, 0, 11.5),
-(13, 3, 0, 11.5);
+(1, 11, 1, 10.5),
+(2, 11, 2, 10),
+(5, 11, 3, 6),
+(6, 22, 1, 10.5),
+(7, 22, 2, 11),
+(8, 22, 4, 12.5),
+(9, 11, 0, 11.5),
+(10, 22, 0, 11.5);
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `tariff_types_double`
+--
+
+CREATE TABLE `tariff_types_double` (
+  `id_ttd` int(50) NOT NULL,
+  `id_type` int(50) NOT NULL,
+  `id_tariff_one` int(50) NOT NULL,
+  `id_tariff_two` int(50) NOT NULL,
+  `percentage` int(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `tariff_types_double`
+--
+
+INSERT INTO `tariff_types_double` (`id_ttd`, `id_type`, `id_tariff_one`, `id_tariff_two`, `percentage`) VALUES
+(1, 11, 1, 2, 10),
+(2, 22, 1, 2, 10),
+(3, 22, 4, 2, 12);
 
 -- --------------------------------------------------------
 
@@ -88,9 +110,8 @@ CREATE TABLE `types` (
 --
 
 INSERT INTO `types` (`id_type`, `type`) VALUES
-(3, 'Военный (участник НИС)'),
-(2, 'Готовая квартира'),
-(1, 'Новостройка');
+(22, 'Готовая квартира'),
+(11, 'Новостройка');
 
 --
 -- Индексы сохранённых таблиц
@@ -108,6 +129,12 @@ ALTER TABLE `tariffs`
 --
 ALTER TABLE `tariff_types`
   ADD PRIMARY KEY (`id_tt`);
+
+--
+-- Индексы таблицы `tariff_types_double`
+--
+ALTER TABLE `tariff_types_double`
+  ADD PRIMARY KEY (`id_ttd`);
 
 --
 -- Индексы таблицы `types`
@@ -130,6 +157,11 @@ ALTER TABLE `tariffs`
 --
 ALTER TABLE `tariff_types`
   MODIFY `id_tt` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+--
+-- AUTO_INCREMENT для таблицы `tariff_types_double`
+--
+ALTER TABLE `tariff_types_double`
+  MODIFY `id_ttd` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT для таблицы `types`
 --
